@@ -94,15 +94,32 @@ function configureGoogleSign() {
     message: {
       fontSize: 20,
       color: 'red'
-    }  
+    },
+    userInfoContainer: {
+      marginVertical: 20
+    },
+    profileImageContainer: {
+      marginTop: 32,
+      paddingHorizontal: 24,
+      flexDirection: 'row',
+      justifyContent: 'center'
+    },
+    profileImage: {
+      width: 100,
+      height: 100
+    },
+    displayTitle: {
+      fontSize: 22,
+      color: '#010101'
+    }
   })
   export default function App() {
-    useEffect(() => {
-      configureGoogleSign()
-    }, [])
     const [isLoggedIn, setIsLoggedIn] = useState(false)
     const [userInfo, setUserInfo] = useState(null)
     const [error, setError] = useState(null)
+    useEffect(() => {
+      configureGoogleSign()
+    }, [])
     return (
         <>
           <StatusBar barStyle='dark-content' />
@@ -115,7 +132,7 @@ function configureGoogleSign() {
               />
             <View style={styles.statusContainer}>
             {isLoggedIn === false ? (
-              <Text style={styles.message}>You must sign in!</Text>
+              <Text style={styles.message}>Please Sign In!</Text>
                 ) : (
               <Button onPress={() => signOut()} title='Sign out' color='#332211' />
             )}
