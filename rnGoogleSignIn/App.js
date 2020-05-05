@@ -24,6 +24,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import {Login} from "./screens/Login"
+
 const App: () => React$Node = () => {
   return (
     <>
