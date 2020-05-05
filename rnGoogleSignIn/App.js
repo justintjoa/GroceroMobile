@@ -106,21 +106,39 @@ function configureGoogleSign() {
     return (
         <>
           <StatusBar barStyle='dark-content' />
-          <View style={styles.container}>
-            <GoogleSigninButton
-              style={styles.signInButton}
-              size={GoogleSigninButton.Size.Wide}
-              color={GoogleSigninButton.Color.Dark}
-              onPress={() => signIn()}
-            />
-          </View>
-          <View style={styles.statusContainer}>
+            <View style={styles.container}>
+              <GoogleSigninButton
+                style={styles.signInButton}
+                size={GoogleSigninButton.Size.Wide}
+                color={GoogleSigninButton.Color.Dark}
+                onPress={() => signIn()}
+              />
+            <View style={styles.statusContainer}>
             {isLoggedIn === false ? (
-            <Text style={styles.message}>You must sign in!</Text>
-            ) : (
-             <Button onPress={() => signOut()} title='Sign out' color='#332211' />
+              <Text style={styles.message}>You must sign in!</Text>
+                ) : (
+              <Button onPress={() => signOut()} title='Sign out' color='#332211' />
             )}
+            </View>
+              <View style={styles.userInfoContainer}>
+                {isLoggedIn === true ? (
+                  <>
+                <Text style={styles.displayTitle}>
+                  Welcome {userInfo.user.name}
+              </Text>
+              <View style={styles.profileImageContainer}>
+                <Image
+                  style={styles.profileImage}
+                  source={{
+                    uri: userInfo && userInfo.user && userInfo.user.photo
+                  }}
+                />
+              </View>
+            </>
+            ) : null}
           </View>
+        </View>
+
         </>
       )
     
