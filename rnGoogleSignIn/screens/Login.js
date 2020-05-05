@@ -15,6 +15,8 @@ import {
 } from '@react-native-community/google-signin'
 import { WEB_CLIENT_ID } from '../utils/keys'
 
+
+
 function configureGoogleSign() {
     GoogleSignin.configure({
       webClientId: WEB_CLIENT_ID,
@@ -90,7 +92,7 @@ function configureGoogleSign() {
     }
   })
 
-export default function Login() {
+const Login = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false)
     const [userInfo, setUserInfo] = useState(null)
     const [error, setError] = useState(null)
@@ -109,3 +111,5 @@ export default function Login() {
       )
     
   }
+
+  export default Login;
