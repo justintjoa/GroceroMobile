@@ -1,6 +1,6 @@
 import React from 'react';
 import {View,Text} from 'react-native';
-import Login from "./screens/Login"
+import {Login} from "./screens/Login"
 
 const App = () => (
   <View>
