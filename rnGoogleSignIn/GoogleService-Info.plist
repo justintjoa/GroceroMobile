@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>368413106409-79bm3ggfutbl7h6otmkcc5il15vjoj6v.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.368413106409-79bm3ggfutbl7h6otmkcc5il15vjoj6v</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA4AXX1NfNXqb2hNujtaC-QT6TlUiiyuFY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>368413106409</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>grocero</string>
+	<key>PROJECT_ID</key>
+	<string>grocerysorcery-eb4eb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>grocerysorcery-eb4eb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:368413106409:ios:d31a9f1f17687b24aa1078</string>
+	<key>DATABASE_URL</key>
+	<string>https://grocerysorcery-eb4eb.firebaseio.com</string>
+</dict>
+</plist>
